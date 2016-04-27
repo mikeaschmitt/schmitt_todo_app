@@ -1,0 +1,15 @@
+
+<ul style="list-style-type:none">
+  
+  
+<div style="text-align:center" class="jumbotron">
+      <h1><%= link.link %></h1>
+</div>
+  <div class="well well-lg">
+      <span style="color:green"><%= link.author %></span> <a style="float:right" class="btn btn-danger" href="/delete/<%= link.id %>" role="button">X</a>
+      <a style="float:right" class="btn btn-success" href="/delete/<%= link.id %>" role="button">✓</a>
+      <h3>Task</h3>
+  <p><%= link.description %></p>
+  </div>
+  
+</ul>

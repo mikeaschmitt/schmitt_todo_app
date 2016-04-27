@@ -1,0 +1,34 @@
+
+<ul style="list-style-type:none">
+<div style="text-align:center" class="jumbotron">
+ <h1>Schmitt ToDo List</h1>
+</div>
+<% @links.each do |link| %>
+
+ <li>
+  <br />
+  <div class="well well-lg">
+  <a class="btn btn-primary" href="/item/<%= link.id %>"><%= link.link %></a> added by <span style="color:green"><%= link.author %></span> <a style="float:right" class="btn btn-danger" href="/delete/<%= link.id %>" role="button">X</a>
+  <a style="float:right" class="btn btn-success" href="/delete/<%= link.id %>" role="button">✓</a>
+  </div>
+  
+  
+  <!--  <% @comments.each do |comment| %>-->
+  <!--   <% if comment.video_id == link.id %>-->
+  <!--<div class="well well-lg">-->
+  <!--<ul>-->
+  <!--    <li><%= comment.author %> - </li>-->
+  <!--    <%= comment.body %>-->
+  <!--    <br />-->
+  <!--</ul>-->
+  <!--</div>-->
+  <!--   <% end %>-->
+  <!--  <% end %>-->
+  
+  
+ </li>
+ <li>
+ </li>
+<% end %>
+            <div style="text-align:center" class="well well-lg"><h1>End of List</h1></div>
+</ul>
